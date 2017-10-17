@@ -1,11 +1,12 @@
 require 'capybara/rspec'
-require_relative '../../lib/app'
+# require_relative '../../lib/app'
+
 
 feature 'display links' do
 
   scenario 'see a link to an internet webpage' do
     Link.create(url: 'http://www.makersacademy.com', title: 'Makers Academy')
-    visit ('/')
+    visit ('/links')
 
     expect(page.status_code).to eq 200
 
