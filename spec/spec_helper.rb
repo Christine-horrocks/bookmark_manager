@@ -1,17 +1,17 @@
 
-# ENV['RACK_ENV'] = 'test'
-# require File.join(File.dirname(__FILE__), '..', './lib/app.rb')
+ENV['RACK_ENV'] = 'test'
+require File.join(File.dirname(__FILE__), '..', './app/app.rb')
 
 require 'capybara'
 require 'capybara/rspec'
 require 'simplecov'
 require 'simplecov-console'
 require 'rspec'
-require './app/models/link'
+# require './app/models/link'
 
 # require_relative './features/web_helpers'
 
-# Capybara.app = Link
+Capybara.app = BookMark
 
 SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter.new([
   SimpleCov::Formatter::Console,
