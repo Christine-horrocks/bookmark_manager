@@ -8,3 +8,4 @@ feature "add a link" do
     expect(page).to have_content("Rogue Mallards")
   end
   end
+ 
