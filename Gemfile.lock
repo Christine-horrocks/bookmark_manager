@@ -15,8 +15,6 @@ GEM
       rack (>= 1.0.0)
       rack-test (>= 0.5.4)
       xpath (~> 2.0)
-    childprocess (0.8.0)
-      ffi (~> 1.0, >= 1.0.11)
     data_mapper (1.2.0)
       dm-aggregates (~> 1.2.0)
       dm-constraints (~> 1.2.0)
@@ -69,7 +67,6 @@ GEM
       data_objects (= 0.10.17)
     docile (1.1.5)
     fastercsv (1.5.5)
-    ffi (1.9.18)
     hirb (0.7.3)
     json (1.8.6)
     json_pure (1.8.6)
@@ -113,10 +110,6 @@ GEM
       ruby-progressbar (~> 1.7)
       unicode-display_width (~> 1.0, >= 1.0.1)
     ruby-progressbar (1.9.0)
-    rubyzip (1.2.1)
-    selenium-webdriver (3.6.0)
-      childprocess (~> 0.5)
-      rubyzip (~> 1.0)
     simplecov (0.15.1)
       docile (~> 1.1.0)
       json (>= 1.8, < 3)
@@ -149,7 +142,6 @@ DEPENDENCIES
   rake
   rspec
   rubocop
-  selenium-webdriver
   simplecov
   simplecov-console
   sinatra
