@@ -1,7 +1,7 @@
 ENV['RACK_ENV'] ||= 'development'
 
 require 'sinatra/base'
-require_relative './models/link'
+require_relative 'models/link'
 
 class BookMark < Sinatra::Base
 
@@ -17,6 +17,8 @@ end
 
 post '/links' do
   Link.create(title: params[:title], url: params[:url])
+  p params[:title]
+  p params[:url]
   redirect '/links'
 end
 

@@ -1,6 +1,9 @@
+require 'pry'
+
 feature 'display links' do
 
   scenario 'see a link to an internet webpage' do
+    binding.pry
     Link.create(url: 'http://www.makersacademy.com', title: 'Makers Academy')
     visit ('/links')
 
