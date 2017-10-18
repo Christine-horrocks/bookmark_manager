@@ -1,7 +1,3 @@
-require 'capybara/rspec'
-# require_relative '../../lib/app'
-
-
 feature 'display links' do
 
   scenario 'see a link to an internet webpage' do
