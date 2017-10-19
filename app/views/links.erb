@@ -1,6 +1,12 @@
 
-<ul id= 'links'>
+<ul id='links'>
   <% @links.each do |o| %>
   <li><%= o.id %> <%= o.title %> <%= o.url %></li>
+<% end %>
+</ul>
+
+<ul id='tags'>
+  <% @tags.each do |o| %>
+  <li><%= o.id %> <%= o.tag %> </li>
 <% end %>
 </ul>
