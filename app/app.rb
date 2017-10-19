@@ -17,12 +17,16 @@ end
 
 post '/links' do
   link = Link.new(title: params[:title], url: params[:url])
-  p link
   tag = Tag.first_or_create(tag: params[:tag])
-  p tag
   link.tags << tag
   link.save
   redirect '/links'
+end
+
+get '/tags/:tag' do
+  tag = Tag.first(tag: params[:tag])
+  @links = tag ? tag.links : []
+  erb :'links/index'
 end
 
   run! if app_file == $0
